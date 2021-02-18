@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ddd;
+    height: 1000px;
+}
+
+.container {
+    width: 100%;
+}
+
+.container1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/jumbotron-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    height: 50px;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-around;
+    z-index: 1;
+}
+
+nav ul li:last-child a {
+    background-color: blueviolet;
+    padding: 2px 12px;
+    border-radius: 20px;
+}
+
+/* nav ul li:last-child {
+    background-color: blueviolet;
+    padding: 2px 12px;
+    border-radius: 20px;
+} */
+
+nav ul li a:hover {
+    border-bottom: 2px solid blue;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.judul {
+    display: flex;
+    justify-content: center;
+    color: white;
+    /* position: relative; */
+    top: 50px;
+    text-align: center;
+    font-size: 30px;
+    word-spacing: 3px;
+    width: 100%;
+    height: 290px;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.judul p {
+    font-size: 50px;
+    font-weight: unset;
+}
+
+.judul p span {
+    font-weight: 600;
+}
+
+.judul a {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+.judul a:hover {
+    font-weight: 600;
+    padding: 6px 17px;
+}
+
+.judul a {
+    margin-top: 10px;
+}
+
+/* Menu Toggle */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 24px;
+    width: 38px;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+.menu-toggle span {
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: rgb(185, 179, 179);
+    transition: all 0.5s;
+    z-index: 1;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    opacity: 0;
+    z-index: 2;
+}
+
+/* Animasi Menu Toggle */
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:last-child {
+    transform-origin: 0 0;
+}
+
+.menu-toggle input:checked~span:nth-child(2) {
+    transform: rotate(45deg) translate(-2px, -2px);
+}
+
+.menu-toggle input:checked~span:last-child {
+    transform: rotate(-45deg) translate(-2px, -1px);
+}
+
+.menu-toggle input:checked~span:nth-child(3) {
+    transform: scale(0);
+    opacity: 0;
+}
+
+
+/* Container2 */
+.container2 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.kotak {
+    width: 80%;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    top: -50px;
+    box-shadow: 5px 5px 5px 1px rgba(53, 24, 24, 0.6);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.kotak img {
+    width: 90px;
+    height: auto;
+}
+
+.kotak p {
+    font-size: 10px;
+}
+
+.kotak div {
+    display: flex;
+    box-sizing: border-box;
+}
+
+div .kata {
+    display: flex;
+    flex-direction: column;
+    margin-top: 7px;
+}
+
+.kata span {
+    color: blueviolet;
+    font-weight: 600;
+}
+
+/* container3 */
+.container3 {
+    display: flex;
+    width: 80%;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* background-color: cadetblue; */
+    margin: 100px auto 60px auto;
+}
+
+.gkonten img {
+    width: 450px;
+    margin: auto 25px;
+}
+
+.konten a {
+    text-decoration: none;
+    position: relative;
+    top: 30px;
+    background-color: blue;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+.konten a:hover {
+    color: greenyellow;
+}
+
+.konten h2 {
+    font-weight: 500;
+}
+
+.konten span {
+    font-weight: 600;
+}
+
+
+/* Container 4 */
+.container4 {
+    /* background-color: greenyellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 55%;
+    height: 200px;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+
+.fototes img {
+    width: 50px;
+    border-radius: 50%;
+    opacity: 0.5;
+
+}
+
+.fototes img:nth-child(even) {
+    opacity: 1;
+    width: 70px;
+}
+
+.ket {
+    position: relative;
+    top: -15px;
+}
+
+.ket p {
+    font-size: 12px;
+    opacity: 0.6;
+}
+
+/* Responsive */
+/* Tampilan Tablet */
+@media screen and (max-width:756px) {
+    .container1 {
+        height: 400px;
+    }
+
+    nav ul {
+        width: 55%;
+    }
+
+    .judul {
+        top: 0px;
+    }
+
+    .judul p {
+        font-size: 40px;
+    }
+
+    .kotak {
+        height: 80px;
+        top: -40px;
+    }
+
+    .kotak img {
+        width: 70px;
+        height: auto;
+    }
+
+    .gkonten img {
+        width: 300px;
+        margin: auto 25px;
+    }
+
+    .container3 {
+        margin: 80px auto 50px auto;
+        width: 90%;
+    }
+
+    .testimoni p {
+        font-size: 13px;
+    }
+
+    .konten a {
+        top: 20px;
+        padding: 7px 25px;
+    }
+
+    .konten p {
+        font-size: 14px;
+    }
+}
+
+/* Tampilan Mobile */
+@media screen and (max-width:576px) {
+    nav ul {
+        display: flex;
+        position: absolute;
+        right: 0;
+        flex-direction: column;
+        height: 300px;
+        width: 100%;
+        top: 0;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.9);
+        transform: translateY(-100%);
+        transition: all 0.5s;
+    }
+
+    .container1 {
+        height: 300px;
+    }
+
+    nav ul.slide {
+        transform: translateY(0);
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .judul {
+        top: -40px;
+    }
+
+    .judul p {
+        font-size: 25px;
+    }
+
+    .kotak {
+        height: 70px;
+        top: -35px;
+    }
+
+    .kotak img {
+        width: 60px;
+        height: 60px;
+        margin: auto;
+    }
+
+    .kotak p {
+        font-size: 8px;
+    }
+
+    .kata span {
+        font-size: 12px;
+        color: blueviolet;
+        font-weight: 600;
+    }
+
+    .container3 {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+    }
+
+    .konten {
+        text-align: center;
+        margin-top: 10px;
+        position: relative;
+    }
+
+    .konten a {
+        position: absolute;
+        text-decoration: none;
+        left: 40%;
+        top: 75px;
+        background-color: blue;
+        color: white;
+        padding: 7px 15px;
+        border-radius: 15px;
+    }
+
+    .fototes img {
+        width: 35px;
+        border-radius: 50%;
+        opacity: 0.5;
+        margin: 10px 5px 1px 5px;
+    }
+
+    .container4 {
+        top: 80px;
+    }
+
+    .testimoni p {
+        font-size: 11px;
+    }
+
+    .fototes img:nth-child(even) {
+        opacity: 1;
+        width: 50px;
+    }
+
+    .ket {
+        position: relative;
+        top: -20px;
+    }
+}
