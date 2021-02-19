@@ -434,4 +434,81 @@ div .kata {
         position: relative;
         top: -20px;
     }
+
+    @media screen and (max-width:420px) {
+        .kotak {
+            width: 80%;
+            height: 60px;
+            justify-content: center;
+        }
+
+        .kotak img {
+            width: 50px;
+            height: auto;
+        }
+
+        .kotak p {
+            font-size: 7px;
+        }
+
+        div .kata {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+        }
+
+        .kata span {
+            color: blueviolet;
+            font-weight: 600;
+        }
+
+        .container3 {
+            margin-top: 70px;
+        }
+    }
+
+    @media screen and (max-width:380px) {
+        .kotak {
+            width: 80%;
+            height: 60px;
+            /* text-align: center; */
+            justify-content: center;
+        }
+
+        .kotak img {
+            width: 40px;
+            height: auto;
+        }
+
+        .kotak p {
+            font-size: 7px;
+        }
+
+        div .kata {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+        }
+
+        .kata span {
+            color: blueviolet;
+            font-weight: 600;
+        }
+
+        .container3 {
+            margin-top: 70px;
+        }
+
+        .konten {
+            margin-top: 5px;
+            justify-content: center;
+        }
+
+        .konten a {
+            width: 80%;
+            left: 5%;
+            margin-top: 10px;
+        }
+
+    }
 }
